@@ -1,23 +1,17 @@
 from Presenter import Presenter
-from SumModel import SumModel
 from View import View
-from MultiplyModel import MultiplyModel
+from ResultModel import ResultModel
 
 
 class Main:
     # @staticmethod
     def main() -> None:
-        sm: SumModel = SumModel()
-        mm: MultiplyModel = MultiplyModel()
-
+        mm: ResultModel = ResultModel()
         v: View = View()
+        rp: Presenter = Presenter(v, mm)
 
-        sp: Presenter = Presenter(v, sm)
-        mp: Presenter = Presenter(v, mm)
-
-        # sp.sumButtonClick()
-
-        mp.multyplyButtonClick()
+        rp.multyplyButtonClick()
+        rp.sumButtonClick()
 
 
 Main.main()

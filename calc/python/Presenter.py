@@ -18,7 +18,7 @@ class Presenter:
         self.model.setX(a)
         self.model.setY(b)
 
-        result: int = self.model.result()
+        result: int = self.model.sumResult()
         self.view.display(result, "sum: ")
 
     def multyplyButtonClick(self) -> None:
@@ -26,5 +26,5 @@ class Presenter:
         b: int = self.view.getValue("b: ")
         self.model.setX(a)
         self.model.setY(b)
-        result: int = self.model.result()
+        result: int = self.model.multiplyResult()
         self.view.display(result, "multiply: ")

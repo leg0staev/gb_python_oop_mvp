@@ -4,7 +4,11 @@ from abc import ABC, abstractmethod
 class Model(ABC):
 
     @abstractmethod
-    def result(self) -> int:
+    def multiplyResult(self) -> int:
+        pass
+
+    @abstractmethod
+    def sumResult(self) -> int:
         pass
 
     @abstractmethod
