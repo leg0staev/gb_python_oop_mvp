@@ -12,12 +12,11 @@ class Main:
 
         v: View = View()
 
-        sp: Presenter = Presenter(v, sm)
-        mp: Presenter = Presenter(v, mm)
+        p: Presenter = Presenter(v, sm, mm)
+        
+        p.sumButtonClick()
 
-        # sp.sumButtonClick()
-
-        mp.multyplyButtonClick()
+        p.multiplyButtonClick()
 
 
 Main.main()
